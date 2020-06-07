@@ -1,0 +1,236 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-06T14:55:32.683Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9457701000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.company.projectwebdriver.cucumber.Hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "User inputs correct username and password",
+        "description": "",
+        "id": "desktop-web-ui-redmine-login;user-inputs-correct-username-and-password",
+        "after": [
+          {
+            "result": {
+              "duration": 852108200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.company.projectwebdriver.cucumber.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Redmine login page on URL",
+            "match": {
+              "location": "com.company.projectwebdriver.cucumber.stepdefs.WebRedmineLoginStepDefs.iGoToTheRedmineLoginPageOnURL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1775725500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I login with my credentials user \"user\" and \"bitnami1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"bitnami1\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.company.projectwebdriver.cucumber.stepdefs.WebRedmineLoginStepDefs.iLoginWithMyCredentialsUserAnd(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 67008500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see the homepage with the username  \"user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user\"",
+                  "offset": 45
+                }
+              ],
+              "location": "com.company.projectwebdriver.cucumber.stepdefs.WebRedmineLoginStepDefs.iShouldSeeTheHomepageWithTheUsername(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2E"
+          }
+        ]
+      }
+    ],
+    "name": "Desktop WEB UI Redmine Login",
+    "description": "  As a user,\n  I want to be able to login on Redmine",
+    "id": "desktop-web-ui-redmine-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/com/company/projectwebdriver/cucumber/features/01-web-redmine-login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-06T14:55:45.002Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7188912800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.company.projectwebdriver.cucumber.Hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Create a Project",
+        "description": "",
+        "id": "desktop-web-ui---redmine---projects;create-a-project",
+        "after": [
+          {
+            "result": {
+              "duration": 697588600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.company.projectwebdriver.cucumber.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the Redmine login page on URL",
+            "match": {
+              "location": "com.company.projectwebdriver.cucumber.stepdefs.WebRedmineLoginStepDefs.iGoToTheRedmineLoginPageOnURL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 901614500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I login with my credentials user \"user\" and \"bitnami1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"bitnami1\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.company.projectwebdriver.cucumber.stepdefs.WebRedmineLoginStepDefs.iLoginWithMyCredentialsUserAnd(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2830359400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I create a project",
+            "match": {
+              "location": "com.company.projectwebdriver.cucumber.stepdefs.WebRedmineCreateProjectStepDefs.iCreateAProject(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "RedmineProjectFromFeature"
+                ]
+              },
+              {
+                "cells": [
+                  "description",
+                  "Esta es una descripción de prueba"
+                ]
+              },
+              {
+                "cells": [
+                  "homepage",
+                  "RedmineProject"
+                ]
+              },
+              {
+                "cells": [
+                  "public",
+                  "true"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87011100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "The project was successfully created",
+            "match": {
+              "location": "com.company.projectwebdriver.cucumber.stepdefs.WebRedmineCreateProjectStepDefs.theProjectWasSuccessfullyCreated()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2E"
+          }
+        ]
+      }
+    ],
+    "name": "Desktop WEB UI - Redmine - Projects",
+    "description": "  As a user\n  I want to ...",
+    "id": "desktop-web-ui---redmine---projects",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/com/company/projectwebdriver/cucumber/features/02-web-redmine-projects.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="25.287">
+    <testcase classname="Desktop WEB UI Redmine Login" name="User inputs correct username and password" time="12.309">
+        <system-out>
+            <![CDATA[Given I go to the Redmine login page on URL.................................passed
+When I login with my credentials user "user" and "bitnami1".................passed
+Then I should see the homepage with the username  "user"....................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Desktop WEB UI - Redmine - Projects" name="Create a Project" time="11.714">
+        <system-out>
+            <![CDATA[Given I go to the Redmine login page on URL.................................passed
+When I login with my credentials user "user" and "bitnami1".................passed
+And I create a project......................................................passed
+Then The project was successfully created...................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
